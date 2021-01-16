@@ -4,17 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#FFFFFF"
+    tools:context=".MainActivity"
+    android:id="@+id/viewPrincipal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="569dp"
+        android:layout_height="1097dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/svg_2_"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <EditText
+        android:id="@+id/precoCombustivel"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="Preço Combustível"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <EditText
+        android:id="@+id/consumoLitro"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="Consumo Litro"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <EditText
+        android:id="@+id/litrosGasolina"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="Litros Gasolina"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="342dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.465"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.296" />
+        android:id="@+id/textView"
+        android:layout_width="373dp"
+        android:layout_height="104dp"
+        android:text="Olá, insira os dados para podermos calcular o valor gasto nesse trajeto "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <EditText
+        android:id="@+id/kmTotal"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="KM Total"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="62dp"
+        android:text="Button"
+        app:backgroundTint="#2B90AB"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="522dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
