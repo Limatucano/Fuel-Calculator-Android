@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity()
         litrosGasolina = kmtotal / consumoLitro
         gasto = litrosGasolina * precoCombustivel
         resulttxt.setText("Seu Resultado:")
-        result.setText("R$ "+gasto.toString())
+        result.setText("R$ %.2f".format(gasto.toString().toDouble()))
     }
     fun View.hideKeyboard() {
         val inputManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
