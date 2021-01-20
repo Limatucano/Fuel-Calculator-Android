@@ -2,6 +2,7 @@ package com.example.calcularcombustivel
 
 import android.app.Activity
 import android.content.Context
+import android.graphics.Color
 import android.icu.text.DecimalFormat
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,14 +32,24 @@ class MainActivity : AppCompatActivity()
         var consumoLitro: EditText = findViewById(R.id.consumoLitro)
         var precoCombustivel: EditText = findViewById(R.id.precoCombustivel)
 
-
         button.setOnClickListener {
             it.hideKeyboard()
-           calcular(kmtotal.text.toString().toDouble(),consumoLitro.text.toString().toDouble(),precoCombustivel.text.toString().toDouble())
+            if(kmtotal.text.length!=0 && consumoLitro.text.length!=0 && precoCombustivel.text.length!=0) {
+                calcular(kmtotal.text.toString().toDouble(), consumoLitro.text.toString().toDouble(), precoCombustivel.text.toString().toDouble())
+            }else {
+                validate(kmtotal)
+                validate(consumoLitro)
+                validate(precoCombustivel)
+            }
+
         }
 
     }
-
+    fun validate(campo: EditText){
+        if(campo.text.length==0) {
+            return campo.setError("Campo Vazio")
+        }
+    }
     fun calcular(kmtotal: Double, consumoLitro: Double, precoCombustivel: Double) {
 
         litrosGasolina = kmtotal / consumoLitro
