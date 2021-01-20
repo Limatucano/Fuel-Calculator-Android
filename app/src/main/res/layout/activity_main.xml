@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:text="KM Total"
+        android:text="@string/kmtotal"
         android:textColor="#000000" />
     <EditText
         android:id="@+id/kmTotal"
@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:text="Consumo Litro"
+        android:text="@string/Consumo_Litro"
         android:textColor="#000000" />
     <EditText
         android:id="@+id/consumoLitro"
@@ -58,7 +58,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:text="Preço do Combustível"
+        android:text="@string/PrecoDoCombustivel"
         android:textColor="#000000" />
     <EditText
         android:id="@+id/precoCombustivel"
@@ -78,9 +78,17 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
         android:background="@drawable/button_bg"
-        android:text="Calcular"
+        android:text="@string/calcular"
         android:textColor="#fafafa"
         app:backgroundTint="#2B90AB" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Custo Aproximado, pois o consumo de combustível pode variar por motivos diversos (veículo, motorista etc.)"
+        android:textColor="#818181" />
 
     <TextView
         android:id="@+id/resultadotxt"
@@ -100,6 +108,7 @@
         android:textSize="60sp"
 
         />
+
 
     <androidx.constraintlayout.widget.Group
         android:layout_width="match_parent"

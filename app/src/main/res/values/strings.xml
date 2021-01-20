@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CalcularCombustivel</string>
+    <string name="Consumo_Litro">Consumo Veículo (Km por Litro)</string>
+    <string name="kmtotal">Km a percorrer</string>
+    <string name="PrecoDoCombustivel">Preço do Combustível</string>
+    <string name="calcular">Calcular</string>
+
 </resources>

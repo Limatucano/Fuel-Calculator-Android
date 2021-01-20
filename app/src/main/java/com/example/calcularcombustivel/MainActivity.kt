@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity()
 
         litrosGasolina = kmtotal / consumoLitro
         gasto = litrosGasolina * precoCombustivel
-        resulttxt.setText("Seu Resultado:")
+        resulttxt.setText("Custo Aproximado:")
         result.setText("R$ %.2f".format(gasto.toString().toDouble()))
     }
     fun View.hideKeyboard() {
